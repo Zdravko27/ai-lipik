@@ -1,0 +1,9 @@
+# src/inference.py
+import joblib
+
+model = joblib.load("models/expense_classifier.pkl")
+
+def predict_category(item_text: str):
+    pred = model.predict([item_text])[0]
+    proba = max(model.predict_proba([item_text])[0])
+    return pred, proba
