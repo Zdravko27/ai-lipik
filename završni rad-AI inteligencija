@@ -1,0 +1,53 @@
+# Receipt Analyzer – OCR + NLP + Fuzzy Matching + Categorization
+
+## 🎯 Problem i cilj
+Cilj projekta je izraditi sustav koji automatski čita račune (slike/PDF), prepoznaje artikle pomoću OCR-a, normalizira tekst, pronalazi najbliže kategorije pomoću fuzzy matchinga i/ili ML modela te generira strukturirane rezultate (Excel + grafovi).
+
+Sustav omogućuje:
+- automatsko čitanje računa iz ZIP-a
+- OCR (Tesseract)
+- čišćenje i normalizaciju teksta
+- fuzzy matching prema rječniku kategorija
+- ML klasifikaciju (ako je uključena)
+- prepoznavanje trgovine
+- izvoz u Excel
+- generiranje grafova i statistike
+
+---
+
+## 📊 Podaci (Dataset)
+Dataset se sastoji od skeniranih/slikanih računa različitih trgovina.
+
+- Broj računa: X (navedi)
+- Format: JPG/PNG/PDF
+- Izvor: vlastiti računi / sintetički / javni dataset
+
+Ako dataset nije u repo-u:
+👉 **Dataset link:** [ovdje umetni Google Drive / Dropbox link]
+
+Ako je dataset sintetički:
+- generiran prema stvarnim primjerima računa
+- korišteni izvori: blogovi o OCR-u, primjeri računa, javni datasetovi
+
+---
+
+## 🧠 Model
+Model je unaprijed istreniran i učitava se iz `models/classifier.pkl`.
+
+Model se **ne trenira tijekom prezentacije**.
+
+---
+
+## 📈 Rezultati
+Projekt uključuje:
+- metrike (accuracy, F1, MAE…)
+- grafove (bar chart, pie chart)
+- primjere predikcija
+
+Ako demo ne radi, rezultati su dostupni u folderu `results/`.
+
+---
+
+## ▶️ Kako pokrenuti projekt
+
+1. Instalirati biblioteke:
