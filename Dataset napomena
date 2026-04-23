@@ -1,0 +1,17 @@
+
+---
+
+## 4. requirements.txt – minimalni sadržaj
+
+```text
+pytesseract
+pdf2image
+Pillow
+opencv-python
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+seaborn
+rapidfuzz
