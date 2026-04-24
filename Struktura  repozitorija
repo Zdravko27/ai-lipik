@@ -1,0 +1,20 @@
+ai-receipt-expense-analyzer/
+├── data/
+│   ├── samples/                 # par primjeraka računa za demo
+│   └── README_DATA.md           # opis gdje je veliki dataset (link)
+├── models/
+│   └── expense_classifier.pkl   # spremljeni ML model
+├── notebooks/
+│   └── 01_ocr_extraction_and_training.ipynb   # tvoj glavni notebook (refaktoriran)
+├── src/
+│   ├── ocr_pipeline.py          # OCR + parsiranje linija
+│   ├── feature_engineering.py   # priprema teksta za model
+│   ├── train_model.py           # treniranje i spremanje modela
+│   └── inference.py             # učitavanje modela i predikcija
+├── screenshots/
+│   ├── confusion_matrix.png
+│   ├── example_predictions.png
+│   └── demo_dashboard.png (ako radiš grafove)
+├── README.md
+├── requirements.txt
+└── LICENSE (po želji, npr. MIT)
